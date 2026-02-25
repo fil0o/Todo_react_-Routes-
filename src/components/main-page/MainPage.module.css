@@ -1,0 +1,47 @@
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	min-height: 100vh;
+	background-color: white;
+	padding-top: 50px;
+	font-family: 'Inter', sans-serif; /* Популярный современный шрифт */
+}
+
+.container {
+	background: #f2f2f2;
+	width: 100%;
+	max-width: 450px;
+	padding: 30px;
+	border-radius: 16px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+	margin: 0 0 20px 0;
+	color: #2d3436;
+	font-size: 24px;
+	text-align: center;
+}
+
+.loader {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25px;
+	height: 25px;
+	border: 5px solid gray;
+	border-radius: 50%;
+	border-left-color: transparent;
+	animation: loader 1s infinite;
+}
+
+@keyframes loader {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

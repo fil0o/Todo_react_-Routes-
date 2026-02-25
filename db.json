@@ -1,0 +1,19 @@
+{
+	"todos": [
+		{
+			"id": "201f",
+			"title": "Реализация TODO",
+			"completed": false
+		},
+		{
+			"id": "cd2e",
+			"title": "Чтение",
+			"completed": false
+		},
+		{
+			"id": "8f2b",
+			"title": "А как жже",
+			"completed": false
+		}
+	]
+}
