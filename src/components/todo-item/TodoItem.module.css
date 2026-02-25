@@ -8,61 +8,14 @@
 	transition: 0.3s;
 }
 
-.todoContent {
-	display: flex;
-	align-items: center;
+.truncatedText {
+	display: block;
+	white-space: nowrap; /* Запрещаем перенос строки */
+	overflow: hidden; /* Прячем то, что не влезло */
+	text-overflow: ellipsis; /* Добавляем три точки */
+	max-width: 100%; /* Ширина контейнера */
 }
 
-.checkbox {
-	width: 20px;
-	height: 20px;
-	border: 2px solid #ccc;
-	border-radius: 4px;
-	background-color: white;
-	cursor: pointer;
-	margin-right: 10px;
-}
-
-.completed {
-	opacity: 0.6;
-	text-decoration: line-through;
-	color: #888;
-}
-
-.actions {
-	display: flex;
-	gap: 10px;
-}
-
-.button {
-	padding: 12px 20px;
-	background-color: #eee;
-	color: black;
-	border: none;
-	border-radius: 8px;
-	cursor: pointer;
-	font-weight: 600;
-	transition:
-		transform 0.1s,
-		background-color 0.2s;
-}
-
-.deleteButton {
-	background-color: #ff0044;
-}
-
-.updateButton {
-	background-color: #00aaff;
-}
-
-.deleteButton:hover {
-	background-color: #ff0044aa;
-}
-.deleteButton:active {
-	transform: scale(0.95);
-}
-
-.text {
-	flex-grow: 1;
-	padding: 15px;
+.item:hover {
+	background-color: #f5f5f5;
 }

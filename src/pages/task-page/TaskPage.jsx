@@ -22,7 +22,7 @@ export const TaskPage = () => {
 
 	const handleDelete = () => {
 		deleteTodo(task.id);
-		navigate('-1'); // Возвращаемся назад после удаления
+		navigate(-1); // Возвращаемся назад после удаления
 	};
 
 	return (
@@ -31,13 +31,21 @@ export const TaskPage = () => {
 				← Назад
 			</button>
 			<div className={styles.content}>
-				<h2>Полное описание задачи:</h2>
+				<h2 className={styles.taskTitle}>Полное описание задачи:</h2>
 				<p className={styles.fullTitle}>{task.title}</p>
 				<div className={styles.actions}>
-					<button onClick={() => updateTodo(id, task.title)}>
+					<button
+						className={`${styles.actionBtn} ${styles.updateButton}`}
+						onClick={() => updateTodo(id, task.title)}
+					>
 						✎ Редактировать
 					</button>
-					<button onClick={handleDelete}>✖ Удалить</button>
+					<button
+						className={`${styles.actionBtn} ${styles.deleteButton}`}
+						onClick={handleDelete}
+					>
+						✖ Удалить
+					</button>
 				</div>
 			</div>
 		</div>

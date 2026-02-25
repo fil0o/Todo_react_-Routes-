@@ -1,0 +1,59 @@
+.taskPage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+.backBtn {
+	align-self: flex-start;
+	margin-bottom: 20px;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.taskTitle {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.fullTitle {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.actions {
+	display: flex;
+	gap: 10px;
+}
+
+.actionBtn {
+	align-self: flex-start;
+	margin-bottom: 20px;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	border: none;
+	border-radius: 10px;
+}
+
+.deleteButton {
+	background-color: #ff0044;
+}
+
+.updateButton {
+	background-color: #00aaff;
+}
+
+.updateButton:hover {
+	background-color: #00aaffaa;
+}
+
+.deleteButton:hover {
+	background-color: #ff0044aa;
+}
+.deleteButton:active {
+	transform: scale(0.95);
+}

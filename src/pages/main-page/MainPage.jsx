@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { useAddTodo, useDebounce, useFilteredTodos, useGetTodos } from '../../hooks';
+import { ControlPanel } from '../../components/control-panel/ControlPanel';
+import { Link } from 'react-router-dom';
 import styles from './MainPage.module.css';
+import { TodoList } from '../../components/todo-list/TodoList';
 
 export const MainPage = () => {
 	// Логика данных
@@ -32,17 +35,16 @@ export const MainPage = () => {
 				{isLoading ? (
 					<div className="loader"></div>
 				) : (
-					<div className={styles.todoGrid}>
-						{finalTodos.map((todo) => (
-							<Link
-								key={todo.id}
-								to={`/task/${todo.id}`}
-								className={styles.todoCard}
-							>
-								<span className={styles.truncatedText}>{todo.title}</span>
-							</Link>
-						))}
-					</div>
+					<TodoList todos={finalTodos} />
+					// {/* {finalTodos.map((todo) => (
+					// 	<Link
+					// 		key={todo.id}
+					// 		to={`/task/${todo.id}`}
+					// 		className={styles.todoCard}
+					// 	>
+					// 		<span className={styles.truncatedText}>{todo.title}</span>
+					// 	</Link>
+					// ))} */}
 				)}
 			</div>
 		</div>

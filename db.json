@@ -1,19 +1,19 @@
 {
-	"todos": [
-		{
-			"id": "201f",
-			"title": "Реализация TODO",
-			"completed": false
-		},
-		{
-			"id": "cd2e",
-			"title": "Чтение",
-			"completed": false
-		},
-		{
-			"id": "8f2b",
-			"title": "А как жже",
-			"completed": false
-		}
-	]
+  "todos": [
+    {
+      "id": "201f",
+      "title": "Реализация TODO c помощью Json Server",
+      "completed": false
+    },
+    {
+      "id": "1673",
+      "title": "Проверим задачу на точки много много много слов, еще  больше слов",
+      "completed": false
+    },
+    {
+      "id": "dd7e",
+      "title": "Получилась реализация",
+      "completed": false
+    }
+  ]
 }
