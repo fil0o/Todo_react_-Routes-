@@ -17,7 +17,7 @@ export const TaskPage = () => {
 	}
 
 	if (!task) {
-		return <Navigate to="/404" />;
+		return <Navigate to="/404" replace />;
 	}
 
 	const handleDelete = () => {
